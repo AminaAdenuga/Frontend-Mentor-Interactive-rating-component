@@ -1,0 +1,148 @@
+/* CSS STYLESHEET */
+
+/* IMPORTED FONT FAMILY FROM GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dancing+Script:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@200&family=Lato:ital,wght@1,300;1,400&family=Montserrat:wght@500;700&family=Open+Sans:wght@300&family=Outfit&family=Overpass:wght@400;700&family=Poppins:wght@300&display=swap");
+
+
+/* UNIVERSAL SELECTORS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  font-family: "Overpass", sans-serif;
+}
+
+
+/* START - UNIVERSAL STYLING FOR BOTH SECTIONS */
+.maincontainer {
+  position: absolute;
+  width: 75%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contain {
+  padding: 2rem 1.5rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 15px;
+}
+.header1 {
+  margin-bottom: 1rem;
+}
+.paragraph1 {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+/* END - UNIVERSAL STYLING FOR BOTH SECTIONS */
+
+/* START - STYLING FOR FIRST SECTION ONLY */
+.logo {
+  background-color: hsl(212, 15%, 23%);
+  border-radius: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3px;
+  margin: 1.5rem 0;
+}
+
+.btns .btn {
+  padding: 0 5.2px;
+  background-color: hsl(212, 15%, 23%);
+  padding: 12.5px;
+  border-radius: 100%;
+  width: 50px;
+  height: 48px;
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+}
+.btns .btn:hover {
+  background-color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  color: white;
+}
+.btns .btn:active {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.btne {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+.btne:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  transition: ease-in-out 1s;
+  cursor: pointer;
+}
+
+/* END - STYLING FOR FIRST SECTION ONLY */
+
+/* START - STYLING FOR SECOND SECTION ONLY */
+.container {
+  visibility: hidden;
+  
+}
+.contains{
+  text-align: center;
+}
+.para {
+  color: hsl(25, 97%, 53%);
+  width: 60%;
+  margin: 1rem auto;
+  padding: 6px;
+  background-color: rgb(43, 69, 91);
+  border-radius: 50px;
+}
+
+/* START- STYLING ATTRIBUTION FROM FRONTEND */
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* END- STYLING ATTRIBUTION FROM FRONTEND */
+
+
+/* START OF MEDIA QUERIES FOR LARGE SCREEN */
+@media all and (min-width: 700px) {
+  .maincontainer {
+    position: absolute;
+    width: 400px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* END OF MEDIA QUERIES FOR LARGE SCREEN */
